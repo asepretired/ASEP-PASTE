@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ASEP PASTE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>ASEP PASTE</h1>
+  </header>
+
+  <main>
+    <section id="create-section">
+      <label for="paste-input">Tempel teks di bawah</label>
+      <textarea id="paste-input" placeholder="Tulis atau tempel teks di sini"></textarea>
+      <div class="row">
+        <button id="save-btn">Simpan & buat link</button>
+        <button id="clear-btn">Bersihkan</button>
+      </div>
+      <div id="result" aria-live="polite"></div>
+    </section>
+
+    <section id="view-section" hidden>
+      <div class="view-header">
+        <button id="back-btn">Buat paste baru</button>
+        <button id="copy-btn">Salin teks</button>
+      </div>
+      <pre id="paste-output" tabindex="0"></pre>
+    </section>
+  </main>
+
+  <footer>
+    <small>ASEP PASTE • Static client paste using URL hash</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
